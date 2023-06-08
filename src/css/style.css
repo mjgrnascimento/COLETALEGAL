@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Overpass&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+}
+
+body {
+    background-color: #2D2D2D;
+}
+
+.title, .main-title {
+    font-size: 25px;
+}
+
+.title {
+    color: #D8E9A8;
+}
+
+header {
+    background-color: #191A19;
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header a:hover {
+    color: #D8E9A8;
+}
+
+section.nosso-projeto, .quem-somos, .contatos,.problematica {
+    background-color: #191A19;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem ;
+    margin: 0px 8rem;
+}
+
+main .nosso-projeto-title, .quem-somos-title, .contatos-title, .problematica-title {
+    padding: 6rem 0rem 1rem 8rem;
+}
+section div.article{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+section div.art{
+    width: 50%;
+    display: grid;
+    padding: 0 5rem;
+}
+section div.art h2{
+    text-align: center;
+    color: #D8E9A8;
+    margin: 1rem;
+}
+section div.art p{
+    text-align: justify;
+    font-size: 20px;
+}
+section.problematica span{
+    color: #D8E9A8;
+    font-size: 20px;
+    text-align: center;
+}
+section.problematica > span{
+    margin: 5rem 0;
+
+}
+section.nosso-projeto h2 {
+    color: #D8E9A8;
+    margin: 1rem 0rem;
+}
+
+section.nosso-projeto h2, p, p span {
+    font-size: 20px;
+    text-align: center;
+}
+
+section.nosso-projeto p span {
+    color: #4E9F3D;
+    font-size: 20px;
+    margin: 10px 0 100px 0;
+}
+
+
+section div.carousel{
+    height: 32rem;
+    margin: 5rem 0 ;
+}
+section div.container input[type=radio] {
+    display: none;
+}
+section label.card {
+    position: absolute;
+    width: 15%;
+    left: 15%;
+    right: 0;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+section div.container {
+    transform-style: preserve-3d;
+}
+
+section div.cards img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#item-1:checked ~ .cards #img-3, #item-2:checked ~ .cards #img-4, #item-3:checked ~ .cards #img-5 , #item-4:checked ~ .cards #img-1 , #item-5:checked ~ .cards #img-2{
+    transform: translatex(-60%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #img-4, #item-2:checked ~ .cards #img-5, #item-3:checked ~ .cards #img-1 , #item-4:checked ~ .cards #img-2, #item-5:checked ~ .cards #img-3{
+    transform: translatex(60%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #img-2, #item-2:checked ~ .cards #img-3, #item-3:checked ~ .cards #img-4 , #item-4:checked ~ .cards #img-5, #item-5:checked ~ .cards #img-4{
+    transform: translatex(0) scale(1);
+    opacity: 0;
+    z-index: 0;      
+}
+#item-1:checked ~ .cards #img-5, #item-2:checked ~ .cards #img-1, #item-3:checked ~ .cards #img-2, #item-4:checked ~ .cards #img-3, #item-5:checked ~ .cards #img-1 {
+    transform: translatex(0) scale(1);
+    opacity: 0;
+    z-index: 0;      
+}
+#item-1:checked ~ .cards #img-1, #item-2:checked ~ .cards #img-2, #item-3:checked ~ .cards #img-3 , #item-4:checked ~ .cards #img-4,#item-5:checked ~ .cards #img-5  {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;     
+}
+section div.article2{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 35%;
+}
+section div.article2 h2{
+    font-size: 20px;
+}
+section div.article2 span{
+    color: #D8E9A8;
+}
+section div.article2 li{
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 0;
+    
+}
+
+section.quem-somos p, p span, span.dark-green {
+    font-size: 20px;
+}
+
+section.quem-somos p {
+    text-transform: uppercase;
+    text-align: start;
+}
+
+section.quem-somos p span.dark-green {
+    color: #4E9F3D;
+    
+}
+
+section.quem-somos p span {
+    color: #D8E9A8;
+}
+
+section.contatos ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+section.contatos ul a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+section.contatos ul a:hover {
+    color: #D8E9A8;
+}
+
+footer {
+    background-color: #191A19;
+    margin-top: 4rem;
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #616161;
+    font-size: 18px;
+}
+
+footer a {
+    color: #D8E9A8;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #FFF;
+}
+
+
