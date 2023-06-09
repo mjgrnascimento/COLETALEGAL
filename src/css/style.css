@@ -24,8 +24,11 @@
     --margin-span: 5rem 0;
     --height-carousel:32rem;
     --left-article:50%;
+    --left-card: 15%;
     --width-article:35%;
-    --width-cards: 100%;
+    --width-cards: 15%;
+    --width-art:50%;
+    --display-article:flex;
 }
 
 body {
@@ -72,12 +75,12 @@ main .nosso-projeto-title, .quem-somos-title, .contatos-title, .problematica-tit
     padding: var(--padding-title);
 }
 section div.article{
-    display: flex;
+    display: var(--display-article);
     flex-direction: row;
     margin: var(--margin-article);
 }
 section div.art{
-    width: 50%;
+    width: var(--width-art);
     display: grid;
     padding: var(--padding-article);
 }
@@ -124,8 +127,8 @@ section div.container input[type=radio] {
 }
 section label.card {
     position: absolute;
-    width: 15%;
-    left: 15%;
+    width:var(--width-cards);
+    left: var(--left-card);
     right: 0;
     transition: transform .4s ease;
     cursor: pointer;
@@ -135,7 +138,7 @@ section div.container {
 }
 
 section div.cards img {
-    width: var(--width-cards);
+    width: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -169,6 +172,7 @@ section div.article2{
     text-align: center;
     left: var(--left-article);
     width: var(--width-article);
+    top: var(--top-article);
 }
 section div.article2 h2{
     font-size: var(--font-text);
