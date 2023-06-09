@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1544400px) {
+    :root{
+        --padding-article:0 2.5rem;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    :root{ 
+        --padding-article:0 0.5rem;
+        --font-text: 15px;
+        --font-title: 20px;
+        --font-footer: 12px;
+    }
+}
+@media only screen and (max-width: 870px) {
+    :root{ 
+        --padding-article:0 1rem;
+        --font-text: 12px;
+        --font-title: 17px;
+        --font-footer: 19px;
+        --padding-section: 1rem; 
+        --left-article:55%;
+        --width-article:25%;
+        --height-carousel:25rem;
+        --width-cards: 170%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    :root{ 
+        --font-text: 10px;
+        --font-title: 15px;
+        --font-footer: 16px;
+        --padding-header: 1rem 4rem;
+        --padding-title: 3rem 0rem 0.5rem 4rem;
+        --padding-article:0 1rem;
+        --padding-section: 2rem; 
+        --padding-footer: 1rem 4rem;
+        --margin-section: 0px 4rem;
+        --margin-article: 0rem;
+        --margin-li: 10px 0;
+        --margin-carousel: 2.5rem 0;
+        --margin-footer: 2rem;
+        --margin-span: 1rem 0;
+        --height-carousel:18rem;
+        --left-article:55%;
+        --width-article:30%;
+        --width-cards: 175%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    :root{ 
+        
+        --font-text: 10px;
+        --font-title: 12px;
+        --font-footer: 4px;
+        
+        --padding-header: 1rem 2rem;
+        --padding-title: 3rem 0rem 0.5rem 2rem;
+        --padding-article:0 0.5rem; 
+        --padding-section: 1rem; 
+        --padding-footer: 1rem 2rem; 
+        --margin-section: 0px 2rem; 
+        --margin-li: 5px 0; 
+        --margin-carousel: 1rem 0; 
+        --margin-span: 0.5rem 0; 
+        --height-carousel:25rem; 
+        /* --left-article:50%; */
+        --width-cards: 180%;  
+        --width-article:30%;
+    }
+}
