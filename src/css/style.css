@@ -7,13 +7,33 @@
     font-family: 'Inter', sans-serif;
     color: #FFF;
 }
+:root{
+    --font-text: 20px;
+    --font-title: 25px;
+    --font-footer: 18px;
+    --padding-header: 2rem 8rem;
+    --padding-title: 6rem 0rem 1rem 8rem;
+    --padding-article:0 5rem;
+    --padding-section: 4rem; 
+    --padding-footer: 2rem 8rem;
+    --margin-section: 0px 8rem;
+    --margin-article: 1rem;
+    --margin-li: 20px 0;
+    --margin-carousel: 5rem 0;
+    --margin-footer: 4rem;
+    --margin-span: 5rem 0;
+    --height-carousel:32rem;
+    --left-article:50%;
+    --width-article:35%;
+    --width-cards: 100%;
+}
 
 body {
     background-color: #2D2D2D;
 }
 
 .title, .main-title {
-    font-size: 25px;
+    font-size:  var(--font-title);
 }
 
 .title {
@@ -22,14 +42,14 @@ body {
 
 header {
     background-color: #191A19;
-    padding: 2rem 8rem;
+    padding: var(--padding-header);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header a {
-    font-size: 20px;
+    font-size: var(--font-text);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -44,61 +64,60 @@ section.nosso-projeto, .quem-somos, .contatos,.problematica {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem ;
-    margin: 0px 8rem;
+    padding:var(--padding-section);
+    margin: var(--margin-section);
 }
 
 main .nosso-projeto-title, .quem-somos-title, .contatos-title, .problematica-title {
-    padding: 6rem 0rem 1rem 8rem;
+    padding: var(--padding-title);
 }
 section div.article{
     display: flex;
     flex-direction: row;
-    margin: 1rem;
+    margin: var(--margin-article);
 }
 section div.art{
     width: 50%;
     display: grid;
-    padding: 0 5rem;
+    padding: var(--padding-article);
 }
 section div.art h2{
+    font-size: var(--font-title);
     text-align: center;
     color: #D8E9A8;
-    margin: 1rem;
+    margin: var(--margin-article);
 }
 section div.art p{
     text-align: justify;
-    font-size: 20px;
+    font-size: var(--font-text);
 }
 section.problematica span{
     color: #D8E9A8;
-    font-size: 20px;
+    font-size: var(--font-text);
     text-align: center;
 }
 section.problematica > span{
-    margin: 5rem 0;
+    margin:var(--margin-span);
 
 }
 section.nosso-projeto h2 {
     color: #D8E9A8;
-    margin: 1rem 0rem;
+    margin: var(--margin-article) 0rem;
 }
 
 section.nosso-projeto h2, p, p span {
-    font-size: 20px;
+    font-size: var(--font-text);
     text-align: center;
 }
 
 section.nosso-projeto p span {
     color: #4E9F3D;
-    font-size: 20px;
-    margin: 10px 0 100px 0;
+    font-size: var(--font-text);
 }
 
-
 section div.carousel{
-    height: 32rem;
-    margin: 5rem 0 ;
+    height: var(--height-carousel);
+    margin: var(--margin-carousel);
 }
 section div.container input[type=radio] {
     display: none;
@@ -116,7 +135,7 @@ section div.container {
 }
 
 section div.cards img {
-    width: 100%;
+    width: var(--width-cards);
     border-radius: 10px;
     object-fit: cover;
 }
@@ -148,24 +167,23 @@ section div.cards img {
 section div.article2{
     position: absolute;
     text-align: center;
-    left: 50%;
-    width: 35%;
+    left: var(--left-article);
+    width: var(--width-article);
 }
 section div.article2 h2{
-    font-size: 20px;
+    font-size: var(--font-text);
 }
 section div.article2 span{
     color: #D8E9A8;
 }
 section div.article2 li{
-    font-size: 20px;
+    font-size: var(--font-text);
     text-align: justify;
-    margin: 20px 0;
-    
+    margin: var(--margin-li); 
 }
 
 section.quem-somos p, p span, span.dark-green {
-    font-size: 20px;
+    font-size: var(--font-text);
 }
 
 section.quem-somos p {
@@ -190,7 +208,7 @@ section.contatos ul {
 
 section.contatos ul a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: var(--font-text);
     transition: 0.5s;
 }
 
@@ -200,8 +218,8 @@ section.contatos ul a:hover {
 
 footer {
     background-color: #191A19;
-    margin-top: 4rem;
-    padding: 2rem 8rem;
+    margin-top: var(--margin-footer);
+    padding: var(--padding-footer) ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,14 +227,14 @@ footer {
 
 footer p {
     color: #616161;
-    font-size: 18px;
+    font-size: var(--font-footer);
 }
 
 footer a {
     color: #D8E9A8;
     text-decoration: none;
     transition: 0.5s;
-    font-size: 20px;
+    font-size: var(--font-text);
 }
 
 footer a:hover {
